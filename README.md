@@ -54,8 +54,8 @@ Todo:
 
   | Name                                         | Link (Un-minified)                                                                                    | Last Updated |
   | :---                                         |    :---:                                                                                              |     ---:     |
-  | Open IMDb trailer in new tab                 | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.28   |
-  | Set Invidious preferences in two clicks      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.28   |
+  | Open IMDb trailer in new tab                 | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
+  | Set Invidious preferences in two clicks      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.29   |
 
 -----------------  
 
@@ -63,7 +63,7 @@ Todo:
   
   Save below code as a bookmarklet -  
   ```js
-  javascript:(function(){var elem = document.querySelector('video.jw-video.jw-reset');var src = elem.getAttribute('src');window.open(src);})()
+  javascript:(function(){var elem=document.querySelector("video.jw-video.jw-reset");var src=elem.getAttribute("src");window.open(src)})()
   ```  
     
   Test the bookmarklet -  
@@ -101,7 +101,7 @@ Todo:
   
   Save below code as a bookmarklet -  
   ```js
-  javascript:(function(){document.getElementById("video_loop").checked = false;document.getElementById("autoplay").checked = false;document.getElementById("continue").checked = false;document.getElementById("continue_autoplay").checked = false;document.getElementById("local").checked = false;document.getElementById("listen").checked = false;document.getElementById("related_videos").checked = true;document.getElementById("annotations").checked = false;document.getElementById("extend_desc").checked = true;document.getElementById("vr_mode").checked = false;document.getElementById("save_player_pos").checked = true;document.getElementById("automatic_instance_redirect").checked = true;document.getElementById("speed").options[4].selected=true;document.getElementById("quality").options[1].selected=true;document.getElementById("quality_dash").options[6].selected=true;document.getElementById("volume").value="50";document.getElementById("comments[0]").options[0].selected=true;document.getElementById("comments[1]").options[0].selected=true;document.getElementById("captions[0]").options[4].selected=true;document.getElementById("captions[1]").options[2].selected=true;document.getElementById("captions[2]").options[1].selected=true;})()
+  javascript:(function(){document.getElementById("video_loop").checked=!1;document.getElementById("autoplay").checked=!1;document.getElementById("continue").checked=!1;document.getElementById("continue_autoplay").checked=!1;document.getElementById("local").checked=!1;document.getElementById("listen").checked=!1;document.getElementById("speed").options[4].selected=!0;document.getElementById("quality").options[1].selected=!0;document.getElementById("quality_dash").options[6].selected=!0;document.getElementById("volume").value="50";document.getElementById("comments[0]").options[0].selected=!0;document.getElementById("comments[1]").options[0].selected=!0;document.getElementById("captions[0]").options[4].selected=!0;document.getElementById("captions[1]").options[2].selected=!0;document.getElementById("captions[2]").options[1].selected=!0;document.getElementById("related_videos").checked=!0;document.getElementById("annotations").checked=!1;document.getElementById("extend_desc").checked=!0;document.getElementById("vr_mode").checked=!1;document.getElementById("save_player_pos").checked=!0;document.getElementById("automatic_instance_redirect").checked=!0})()
   ```  
     
   Test the bookmarklet -  
