@@ -49,15 +49,12 @@ Todo:
   
   </details>
 
------------------
 ## Contents
 
   | Name                                         | Link (Un-minified)                                                                                    | Last Updated |
   | :---                                         |    :---:                                                                                              |     ---:     |
   | Open IMDb trailer in new tab                 | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
   | Set Invidious preferences in two clicks      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.29   |
-
------------------  
 
 ### **Open IMDb trailer in new tab**
   
@@ -66,30 +63,36 @@ Todo:
   javascript:(function(){var elem=document.querySelector("video.jw-video.jw-reset");var src=elem.getAttribute("src");window.open(src)})()
   ```  
     
-  Test the bookmarklet -  
-  **Step 1** - Open an IMDb page. Example: [Terminator 2](https://www.imdb.com/title/tt0103064/)  
-  **Step 2** - Click on this bookmarklet.  
-  
-+ If a featured trailer is present next to the movie or show's poster (Image 1a), it will open in a new tab/window as per your browser setting. (Image 1b)
+  How to use the bookmarklet -  
 
-    <sub>**Image 1a**: Featured trailer (red arrow :arrow_down:) is present next to the movie or show's poster -</sub>  
-  
-    ![Featured trailer is present next to the movie or show's poster](https://github.com/xypha/Bookmarklets/assets/12472214/917818a0-ef01-4270-bc99-94b49cbe119a)
+  <details>
+  <summary><sup>Show/Hide</sup></summary>  
+    
+  > **Step 1** - Open an IMDb page. Example: [Terminator 2](https://www.imdb.com/title/tt0103064/)  
+  > **Step 2** - Click on this bookmarklet.  
+  > 
+  > + If a featured trailer is present next to the movie or show's poster (Image 1a), it will open in a new tab/window as per your browser setting. (Image 1b)  
+  > 
+  > <sub>**Image 1a**: Featured trailer (red arrow :arrow_down:) is present next to the movie or show's poster -</sub>  
+  > 
+  > ![Featured trailer is present next to the movie or show's poster](https://github.com/xypha/Bookmarklets/assets/12472214/917818a0-ef01-4270-bc99-94b49cbe119a)
+  > 
+  > <sub>**Image 1b**: Trailer will open in a new tab or window -</sub>  
+  > 
+  > ![Trailer will open in a new tab or window](https://github.com/xypha/Bookmarklets/assets/12472214/555f17d9-7455-4f32-8508-025441f3bbd2)
+  > 
+  > + If a featured trailer is **not** present, but `Videos` are present on the page (Image 1c), you can choose one of two options -  
+  > 
+  > - Click on this bookmarklet. A random video will open in a new tab. *(or)*  
+  > - Click on a desired video, wait for the page and video to load, then click on this bookmarklet. The desired video will open in a new tab/window.  
+  > 
+  > <sub>**Image 1c**: Movie or show's videos on the main page -</sub>  
+  > 
+  > ![Movie or show's videos on the main page](https://github.com/xypha/Bookmarklets/assets/12472214/73c050c7-eb81-44ab-a2b6-214393632258)
+  > 
+  > + If a featured trailer is not present **and** there are no videos, then *nothing happens* when the bookmarklet is clicked.  
 
-    <sub>**Image 1b**: Trailer will open in a new tab or window -</sub>  
-  
-    ![Trailer will open in a new tab or window](https://github.com/xypha/Bookmarklets/assets/12472214/555f17d9-7455-4f32-8508-025441f3bbd2)
-
-+ If a featured trailer is **not** present, but `Videos` are present on the page (Image 1c), you can choose one of two options -  
-  
-  - Click on this bookmarklet. A random video will open in a new tab. *(or)*  
-  - Click on a desired video, wait for the page and video to load, then click on this bookmarklet. The desired video will open in a new tab/window.  
-  
-    <sub>**Image 1c**: Movie or show's videos on the main page -</sub>  
-  
-    ![Movie or show's videos on the main page](https://github.com/xypha/Bookmarklets/assets/12472214/73c050c7-eb81-44ab-a2b6-214393632258)
-  
-+ If a featured trailer is not present **and** there are no videos, then *nothing happens* when the bookmarklet is clicked.  
+  </details>
   
 -----------------
 
@@ -104,16 +107,22 @@ Todo:
   javascript:(function(){document.getElementById("video_loop").checked=!1;document.getElementById("autoplay").checked=!1;document.getElementById("continue").checked=!1;document.getElementById("continue_autoplay").checked=!1;document.getElementById("local").checked=!1;document.getElementById("listen").checked=!1;document.getElementById("speed").options[4].selected=!0;document.getElementById("quality").options[1].selected=!0;document.getElementById("quality_dash").options[6].selected=!0;document.getElementById("volume").value="50";document.getElementById("comments[0]").options[0].selected=!0;document.getElementById("comments[1]").options[0].selected=!0;document.getElementById("captions[0]").options[4].selected=!0;document.getElementById("captions[1]").options[2].selected=!0;document.getElementById("captions[2]").options[1].selected=!0;document.getElementById("related_videos").checked=!0;document.getElementById("annotations").checked=!1;document.getElementById("extend_desc").checked=!0;document.getElementById("vr_mode").checked=!1;document.getElementById("save_player_pos").checked=!0;document.getElementById("automatic_instance_redirect").checked=!0})()
   ```  
     
-  Test the bookmarklet -  
-  **Step 1** - Open the `Preferences` page of an Invidious instance. Example: [yewtu.be](https://yewtu.be/preferences) (Image 2a)  
-  **Step 2** - Click on this bookmarklet.  
-  **Step 3** - Check if the preferences set by the bookmarklet are as desired. (Image 2b)  
-  **Step 4** - Click on the `Save preferences` button at the bottom of the webpage.  
+  How to use the bookmarklet -  
 
-  <sub>**Image 2a**: Preferences - Website defaults -</sub>  
-  
-  ![Preferences - Website defaults](https://github.com/xypha/Bookmarklets/assets/12472214/dc46e73e-e3da-4f5e-acf6-8f2b779c29fc)
+  <details>
+  <summary><sup>Show/Hide</sup></summary>  
+    
+  > **Step 1** - Open the `Preferences` page of an Invidious instance. Example: [yewtu.be](https://yewtu.be/preferences) (Image 2a)  
+  > **Step 2** - Click on this bookmarklet.  
+  > **Step 3** - Check if the preferences set by the bookmarklet are as desired. (Image 2b)  
+  > **Step 4** - Click on the `Save preferences` button at the bottom of the webpage.  
+  > 
+  > <sub>**Image 2a**: Preferences - Website defaults -</sub>  
+  > 
+  > ![Preferences - Website defaults](https://github.com/xypha/Bookmarklets/assets/12472214/dc46e73e-e3da-4f5e-acf6-8f2b779c29fc)
+  > 
+  > <sub>**Image 2b**: Preferences set by bookmarklet -</sub>  
+  > 
+  > ![Preferences set by bookmarklet](https://github.com/xypha/Bookmarklets/assets/12472214/4db5bc9b-0a31-4d08-9af3-bb0c896c0286)
 
-  <sub>**Image 2b**: Preferences set by bookmarklet -</sub>  
-
-  ![Preferences set by bookmarklet](https://github.com/xypha/Bookmarklets/assets/12472214/4db5bc9b-0a31-4d08-9af3-bb0c896c0286)
+  </details>
