@@ -3,7 +3,7 @@ Todo:
 * solve random selection in IMDb  
 
 ; https://github.com/xypha/Bookmarklets/edit/main/README.md
-; Last updated 2024.03.28
+; Last updated 2024.04.11
 -->
 
 # Bookmarklets  
@@ -26,7 +26,8 @@ Todo:
   >  
   > Bookmarklets always begin with `javascript:`.  Some browsers automatically delete this label when pasting, so make sure it's there.  
   > Bookmarklet code shown below is *minified* i.e., it contains only the information a computer needs to execute the commands quickly.  
-  > Copy and paste the code at [UnMinify.com](https://unminify.com/) to expand it so it is easier for humans to read, or visit un-minified link in contents.   
+  > Copy and paste the code at [UnMinify.com](https://unminify.com/) to expand it so it is easier for humans to read, or visit un-minified link in contents to view the original code with comments.   
+  > If you choose to alter the un-minified code to your own needs, use [Minify JS](https://www.minifier.org/) to compact it before bookmarklet creation.  
   > 
   > Visit [Wikipedia](https://en.wikipedia.org/wiki/Bookmarklet) to learn more about bookmarklets.  
   
@@ -44,19 +45,21 @@ Todo:
   > ![Add bookmark window in Firefox - paste bookmarklet code in ~URL~ field](https://github.com/xypha/Bookmarklets/assets/12472214/97fb5be9-361d-4eb3-9d56-16d972692a6d)  
   >  
   > The contents of `Name`, `Tags` or `Keyword` fields are optional.  
-  > Choose something that will make it easy for you to remember a bookmarklet's function and use it from the Bookmarks Toolbar or find it in the bookmark manager.  
+  > Choose something that will make it easy for you to remember a bookmarklet's function and use it from the Bookmarks Toolbar, and locate or search for it in your browser's Bookmark Manager.  
   > You can leave these other fields blank too. The content of these fields won't change the function of the bookmarklet.  
   
   </details>
 
 ## Contents
 
-  | Name                                         | Link (Un-minified)                                                                                    | Last Updated |
-  | :---                                         |    :---:                                                                                              |     ---:     |
-  | Open IMDb trailer in new tab                 | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
-  | Set Invidious preferences in two clicks      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.29   |
+  | Sl No.  | Name                                              | Link (Un-minified)                                                                                    | Last Updated |
+  | :---    | :---                                              |    :---:                                                                                              |     ---:     |
+  | 1       | Open IMDb trailer in new tab                      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
+  | 2       | Set Invidious preferences in two clicks           | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.29   |
 
-### **Open IMDb trailer in new tab**
+### **Open IMDb trailer in new tab**  
+  
+  This bookmarklet enables you to open the featured trailer/video in a new tab on any IMDb movie/TV show title page.  
   
   Save below code as a bookmarklet -  
   ```js
@@ -83,7 +86,7 @@ Todo:
   > 
   > + If a featured trailer is **not** present, but `Videos` are present on the page (Image 1c), you can choose one of two options -  
   > 
-  > - Click on this bookmarklet. A random video will open in a new tab. *(or)*  
+  > - Click on this bookmarklet. A video (usually the 1st one but its random sometimes) will open in a new tab. *(or)*  
   > - Click on a desired video, wait for the page and video to load, then click on this bookmarklet. The desired video will open in a new tab/window.  
   > 
   > <sub>**Image 1c**: Movie or show's videos on the main page -</sub>  
