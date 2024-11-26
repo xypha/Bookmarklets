@@ -54,10 +54,10 @@ Todo:
 
   | Sl No.  | Name                                              | Link (Un-minified)                                                                                    | Last Updated |
   | :---    | :---                                              |    :---:                                                                                              |     ---:     |
-  | 1       | Open IMDb trailer in new tab                      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
+  | 1       | Open IMDb trailer in a new tab                    | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
   | 2       | Set Invidious preferences in two clicks           | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.29   |
 
-### **Open IMDb trailer in new tab**  
+### **Open IMDb trailer in a new tab**  
   
   This bookmarklet enables you to open the featured trailer/video in a new tab on any IMDb movie/TV show title page.  
   
