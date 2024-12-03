@@ -3,7 +3,7 @@ Todo:
 * solve random selection in IMDb  
 
 ; https://github.com/xypha/Bookmarklets/edit/main/README.md
-; Last updated 2024.04.11
+; Last updated 2024.12.03
 -->
 
 # Bookmarklets  
@@ -54,10 +54,11 @@ Todo:
 
   | Sl No.  | Name                                              | Link (Un-minified)                                                                                    | Last Updated |
   | :---    | :---                                              |    :---:                                                                                              |     ---:     |
-  | 1       | Open IMDb trailer in a new tab                    | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
+  | 1       | Open IMDb trailer in new tab                      | [Link](https://github.com/xypha/Bookmarklets/blob/main/Open_IMDb_trailer_in_new_tab.js)               | 2024.03.29   |
   | 2       | Set Invidious preferences in two clicks           | [Link](https://github.com/xypha/Bookmarklets/blob/main/Set_Invidious_preferences_in_two_clicks.js)    | 2024.03.29   |
+  | 3       | Toggle Dark Mode for PDFs in Firefox              | [Link](https://github.com/xypha/Bookmarklets/blob/main/PDF_Dark_Mode.js)                              | 2024.12.03   |
 
-### **Open IMDb trailer in a new tab**  
+### **Open IMDb trailer in new tab**  
   
   This bookmarklet enables you to open the featured trailer/video in a new tab on any IMDb movie/TV show title page.  
   
@@ -116,7 +117,7 @@ Todo:
   <summary><sup>Show/Hide</sup></summary>  
     
   > **Step 1** - Open the `Preferences` page of an Invidious instance. Example: [yewtu.be](https://yewtu.be/preferences) (Image 2a)  
-  > **Step 2** - Click on this bookmarklet.  
+  > **Step 2** - Click on this bookmarklet from Bookmarks Toolbar.  
   > **Step 3** - Check if the preferences set by the bookmarklet are as desired. (Image 2b)  
   > **Step 4** - Click on the `Save preferences` button at the bottom of the webpage.  
   > 
@@ -127,5 +128,34 @@ Todo:
   > <sub>**Image 2b**: Preferences set by bookmarklet -</sub>  
   > 
   > ![Preferences set by bookmarklet](https://github.com/xypha/Bookmarklets/assets/12472214/4db5bc9b-0a31-4d08-9af3-bb0c896c0286)
+
+  </details>
+
+-----------------
+
+### **Toggle Dark Mode for PDFs in Firefox**  
+
+[Source](https://stackoverflow.com/a/71777470/5282788)
+  
+  Save below code as a bookmarklet -  
+  ```js
+  javascript:(function(v) {v.style = v.classList.contains('dm')?'':'filter: grayscale(1) invert(1) sepia(1) contrast(75%)';v.classList.toggle('dm');})(viewer)
+  ```  
+    
+  How to use the bookmarklet -  
+
+  <details>
+  <summary><sup>Show/Hide</sup></summary>  
+    
+  > **Step 1** - Open any PDF file in a Firefox tab
+  > **Step 2** - Click on this bookmarklet from Bookmarks Toolbar.    
+  > 
+  > <sub>**Image 3a**: PDF file in light mode (Default) -</sub>  
+  > 
+  > ![PDF-light-mode](https://github.com/user-attachments/assets/13640e93-2824-41df-90e8-7053cf6768e3)
+  > 
+  > <sub>**Image 3b**: PDF file in dark mode -</sub>  
+  > 
+  > ![PDF-dark-mode](https://github.com/user-attachments/assets/43c9c89e-788b-4860-90b6-a340a0c01380)
 
   </details>
